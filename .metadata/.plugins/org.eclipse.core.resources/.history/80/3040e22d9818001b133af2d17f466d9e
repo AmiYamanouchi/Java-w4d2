@@ -1,0 +1,60 @@
+package schoolManagement;
+
+
+
+public class Course {
+	private String courseName;
+	private int duration;
+	private Instructor instructor;  //インストラクターは一人。
+  //コースには学生は複数入れるからアレイリスト
+	
+	//constructor
+	public Course(String courseName, int duration, Instructor instructor) {
+		setCourseName(courseName);
+		setDuration(duration);
+		setInstructor(instructor);
+	}
+	
+		
+	//getter
+	public String getCourseName() {
+		return courseName;
+	}
+	
+	public int getDuration() {
+		return duration;
+	}
+	
+	public Instructor getInstructor() {
+		return instructor;
+	}
+	
+	
+	
+	
+	//setter
+	
+	public void setCourseName(String courseName) {
+		if (!courseName.isEmpty() && !courseName.equalsIgnoreCase(null)) {
+			this.courseName = courseName;
+		} else {
+			this.courseName = "Unknown";
+		}
+	}
+	
+	public void setDuration(int duration) {
+		if (duration >= 4) {
+			this.duration = duration;
+		} else {
+			this.duration = 4;
+		}
+	}
+	
+	public void setInstructor(Instructor instructor) {
+		this.instructor = instructor;
+	}
+	
+
+	
+	
+}

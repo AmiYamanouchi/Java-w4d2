@@ -1,0 +1,3 @@
+INDEX VERSION 1.131+/Users/amiyamanouchi/Desktop/CICCC-WMAD/java/week4/w4d2/.metadata/.plugins/org.eclipse.jdt.core
+2713648726.index
+3048558584.index

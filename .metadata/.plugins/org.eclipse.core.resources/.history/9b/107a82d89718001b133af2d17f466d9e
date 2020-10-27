@@ -1,0 +1,49 @@
+package schoolManagement;
+
+import java.util.ArrayList;
+
+	public class Driver {
+		
+		public static void printInformation(ArrayList<Course> nameList) {
+			
+			for(Course i : nameList) {
+				System.out.println("Course name is "+  i.getCourseName() + 
+								   "\nwhich takes " + i.getDuration() +  "weeks." +
+							       "\nThe Instructor of this course is " + i.getInstructor().getFirstName()+ " "+ i.getInstructor().getLastName() +
+							       "who is " + i.getInstructor().getStatus() +
+			
+		}
+	}
+	
+		
+
+
+	public static void main(String[] args) {
+		
+		ArrayList<Course> nameList = new ArrayList<>();
+		
+	
+		
+		Instructor instructor1 = new Instructor("Jane1", "Doe", "111-111-1111", 3 );
+		Instructor instructor2 = new Instructor("Jane2", "Doe", "112-111-1111", 2 );
+		Instructor instructor3 = new Instructor("Jane3", "Doe", "113-111-1111", 1 );
+		Instructor instructor4 = new Instructor("Jane4", "Doe", "114-111-1111", 5 );
+		
+		Course course1 = new Course("Java", 4, instructor1);
+		Course course2 = new Course("Javascript", 4, instructor2);
+		Course course3 = new Course("CSS", 4, instructor3);
+		Course course4 = new Course("HTML", 4, instructor4);
+		
+		
+		nameList.add(course1);
+		nameList.add(course2);
+		nameList.add(course3);
+		nameList.add(course4);
+		
+		printInformation(nameList);
+		
+		
+		
+	}
+
+}
